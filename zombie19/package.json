@@ -1,0 +1,18 @@
+{
+  "name": "zombie19-tp",
+  "version": "1.0.0",
+  "description": "stuff",
+  "private": true,
+  "scripts": {
+    "build": "rollup -f iife -i src/main.mjs -o dist/index.js -m index.js.map",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "ADEA",
+  "license": "UNLICENSE",
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "rimraf": "^4.4.0",
+    "rollup": "^3.19.1"
+  }
+}

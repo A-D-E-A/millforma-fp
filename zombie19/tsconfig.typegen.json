@@ -1,0 +1,12 @@
+{
+    "include": ["zombie19.js"],
+    "compilerOptions": {
+        "allowJs": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "types",
+        "declarationMap": true,
+        "target": "ES2022",
+        "lib": ["dom", "es2022"]
+    }
+}
