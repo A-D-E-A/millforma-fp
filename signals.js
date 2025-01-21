@@ -25,6 +25,16 @@ function createSignal(x) {
     ];
 }
 
+function createSignalFunctional(x) {
+    return [
+        () => x,
+        (y) => createSignalFunctional(y)
+    ];
+}
+
+const [get1, set1] = createSignalFunctional(1);
+const [get2, set2] = set1(2);
+
 const mystate = useState(0);
 const [getState, setState] = createSignal(0);
 console.log(getState());
